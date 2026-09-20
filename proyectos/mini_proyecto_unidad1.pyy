@@ -22,7 +22,7 @@ for counter in range(2):
             backdrop = "underwater1"
         else:
         print("¡FIN DEL JUEGO!")
-        backdrop: = "underwater2"
+        backdrop = "underwater2"
         break
           
           
