@@ -1,0 +1,40 @@
+print ("Hello there")
+myName=("Osiris")
+print ("hello"+"Osiris")
+print("Cual es tu nombre?")
+myName= input ("Osiris")
+print("Hello"+ myName)
+myName= input ("Cual es tu nombre?")
+print("Hello"+ myName)
+count = 10
+myscore=0
+pi= 3.1415927
+nameofPetCat= "Kimchy"
+count = count -1
+myscore =myscore +1
+if "condition": 
+    do this 
+    if  else: Anyscore == 10
+    if "condition":
+        do this:
+    else: 
+     do this instead
+import time
+time.sleep(1)
+time.sleep(0.5)
+while True:
+    if "condition": 
+        do this
+while True:
+    do this
+    if condition:
+        break
+for counter in range (10)
+    do this
+and do this ten times
+while True:
+    do this
+    and do this
+forever
+names=["Fred",John","Betty","Susan","Helen","James","Tom","Paul"]
+print(names[3])
