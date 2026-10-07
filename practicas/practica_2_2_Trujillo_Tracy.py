@@ -193,6 +193,14 @@ nacionalidad = "coreana"
 es_elegible = (edad > 17) and (nacionalidad == "mexicana")
 print(es_elegible)
 
+#False
+edad = 30
+nacionalidad = "española"
+es_elegible = (edad > 17) and (nacionalidad == "mexicana")
+print(es_elegible)
+
+
+
 
 
 
