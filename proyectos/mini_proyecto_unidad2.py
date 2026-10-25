@@ -1,3 +1,4 @@
+#Mini Proyecto Unidad 2
 #Tracy Fernanda Trujillo Gonzalez
 #Programacion I
 #Este programa sera capaz de capturar datos, validarlos.
@@ -24,21 +25,26 @@ for i in range(cantidad):
             break
         print("Error: el nombre no debe contener números ni estar vacío.")
 
-    #Precio (con decimales)
+   #Precio (con decimales)
+
     while True:
         try:
             precio_producto = float(input("Ingresa el precio del producto: "))
-            break
+            if precio_producto > 0:
+                break
+            print("Error: el precio debe ser mayor a 0.")
         except ValueError:
             print("Error: debes ingresar un número válido para el precio.")
+
 
     #Cantidad (entero)
     while True:
         cantidad_producto = input("Ingresa la cantidad de este producto: ")
-        if cantidad_producto.isdigit():
+        if cantidad_producto.isdigit()and int(cantidad_producto) > 0:
             cantidad_producto = int(cantidad_producto)
             break
         print("Error: debes ingresar un número entero válido.")
+
     #Calculos
     subtotal_producto = precio_producto * cantidad_producto
     subtotal_general += subtotal_producto
@@ -49,7 +55,7 @@ total = subtotal_general + iva
 
 #RECIBO
 print("\n" + "=" * 45)
-print("RECIBO")
+print("                 RECIBO")
 print("=" * 45)
 for nombre, precio, cant, sub in productos:
     print(f"{nombre:<15} {cant:>3} x ${precio:>8.2f} = ${sub:>9.2f}")
@@ -58,6 +64,7 @@ print(f"{'Subtotal:':<30} ${subtotal_general:>10.2f}")
 print(f"{'IVA (16%):':<30} ${iva:>10.2f}")
 print(f"{'TOTAL A PAGAR:':<30} ${total:>10.2f}")
 print("=" * 45)
+
 
 print("Gracias por tu compra  (ᗒᗨᗕ)")
 
